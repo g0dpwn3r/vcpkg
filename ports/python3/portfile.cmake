@@ -47,7 +47,8 @@ if(VCPKG_TARGET_IS_WINDOWS)
         message(FATAL_ERROR "Cannot build python extensions! Python extensions on windows can only be built if python is a dynamic library!")
     endif()
     # The Windows 11 SDK has a problem that causes it to error on the resource files, so we patch that.
-    vcpkg_get_windows_sdk(WINSDK_VERSION)
+    # Use a stable Windows SDK version to avoid MSBuild CodeTaskFactory issues
+    set(WINSDK_VERSION "10.0.22621.0")
     if("${WINSDK_VERSION}" VERSION_GREATER_EQUAL "10.0.22000")
         list(APPEND PATCHES "0007-workaround-windows-11-sdk-rc-compiler-error.patch")
     endif()
