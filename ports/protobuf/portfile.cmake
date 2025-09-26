@@ -1,9 +1,9 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
-    REPO protocolbuffers/protobuf
-    REF "v${VERSION}"
-    SHA512 46d60de626480f5bac256a09c57300fe5ec990664876edbe04c9385769b500ec88409da976acc28fcb2b2e987afc1bbbf5669f4fed4033c5464ab8bbd38723bc
-    HEAD_REF master
+    REPO g0dpwn3r/protobuf
+    REF "main"
+    SHA512 EE88731D0A7C68E21B85D59CD1D3F181A0D512E0FBD4230E4941CDD5C5E7ECF894A9A2019D69192D14922F66E71E12914A0624121EF474367C96FF7CF6F77DC3
+    HEAD_REF main
     PATCHES
         fix-static-build.patch
         fix-default-proto-file-path.patch
