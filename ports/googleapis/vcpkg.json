@@ -1,9 +1,17 @@
 {
   "name": "googleapis",
-  "version-string": "alias",
-  "port-version": 2,
-  "description": "Deprecated, use google-cloud-cpp instead.",
+  "version-string": "1.0.0-g0dpwn3r",
+  "description": "Custom fork of Google APIs repository patched by g0dpwn3r.",
+  "homepage": "https://github.com/g0dpwn3r/googleapis",
+  "license": "Apache-2.0",
   "dependencies": [
-    "google-cloud-cpp"
-  ]
+    "protobuf",
+    "abseil"
+  ],
+  "features": {
+    "grpc": {
+      "description": "Enable gRPC support",
+      "dependencies": ["grpc"]
+    }
+  }
 }
