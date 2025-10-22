@@ -1,7 +1,0 @@
---- a/include/mysqlx/common/value.h
-+++ b/include/mysqlx/common/value.h
-@@ -33,6 +33,7 @@
- #include "api.h"
- #include "error.h"
-+#include <cstdint>
- #include "util.h"
